@@ -1,3 +1,6 @@
+Note: this project was cloned from spring.io. I have modified it to create some initial data when starting the main webapp. It deletes wipes the old data each time it starts up by calling a new method deleteAll in the MovieRepository interface.
+
+
 Movies Example Application
 ==========================
 
