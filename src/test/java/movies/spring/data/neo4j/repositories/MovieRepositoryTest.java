@@ -56,7 +56,7 @@ public class MovieRepositoryTest {
 		instance.save(matrix);
 	}
 
-	@After
+	//@After
 	public void tearDown() {
 		session.purgeDatabase();
 	}

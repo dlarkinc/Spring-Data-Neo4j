@@ -21,5 +21,8 @@ public interface MovieRepository extends PagingAndSortingRepository<Movie, Long>
 
 	@Query("MATCH (m:Movie)<-[r:ACTED_IN]-(a:Person) RETURN m,r,a LIMIT {limit}")
 	Collection<Movie> graph(@Param("limit") int limit);
+	
+	@Query("MATCH (n) DETACH DELETE n")
+	void deleteAll();
 }
 
